@@ -1,0 +1,88 @@
+[
+    {
+        "name": "Pikachu",
+        "type": "Electric",
+        "level": 54,
+        "weight_kg": 6.0,
+        "is_shiny": false,
+        "held_item": null,
+        "skills": [
+            "Thunder Shock",
+            "Quick Attack",
+            "Thunderbolt",
+            "Volt Tackle"
+        ],
+        "stats": {
+            "hp": 35,
+            "attack": 55,
+            "defense": 40,
+            "sp_attack": 50,
+            "sp_defense": 50,
+            "speed": 90
+        }
+    },
+    {
+        "name": "Charmander",
+        "type": "Fire",
+        "level": 8,
+        "weight_kg": 8.5,
+        "is_shiny": true,
+        "held_item": "Charcoal",
+        "skills": [
+            "Ember",
+            "Scratch",
+            "Tackle",
+            "Smokescreen"
+        ],
+        "stats": {
+            "hp": 39,
+            "attack": 52,
+            "defense": 43,
+            "sp_attack": 60,
+            "sp_defense": 50,
+            "speed": 65
+        }
+    },
+    {
+        "name": "pichu",
+        "type": "electric",
+        "level": 5,
+        "is_shiny": "false",
+        "held_item": "none",
+        "skills": [
+            "tackle",
+            "charm",
+            "none",
+            "none"
+        ],
+        "stats": {
+            "hp": 25,
+            "attack": 8,
+            "defense": 8,
+            "sp_defense": 7,
+            "sp_attack": 10,
+            "speed": 9
+        }
+    },
+    {
+        "name": "Mew",
+        "type": "psyquic",
+        "level": 100,
+        "is_shiny": "True",
+        "held_item": "mewstal z",
+        "skills": [
+            "Quick Attack",
+            "pound",
+            "hyper beam",
+            "calm mind"
+        ],
+        "stats": {
+            "hp": 252,
+            "attack": 180,
+            "defense": 190,
+            "sp_defense": 195,
+            "sp_attack": 255,
+            "speed": 200
+        }
+    }
+]
