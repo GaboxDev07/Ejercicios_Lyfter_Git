@@ -1,0 +1,1 @@
+total_de_notas = int(input("Ingrese la cantidad de Notas"))
