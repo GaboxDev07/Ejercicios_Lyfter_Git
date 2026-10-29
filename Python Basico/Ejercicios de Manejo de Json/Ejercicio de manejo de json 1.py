@@ -1,12 +1,12 @@
 print ("Bienvenido al ejercicio de manejo de Json 1")
 
 import json
+import os
 
 def pokedex_read_json(read_path):
+    read_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), read_path)
     with open(read_path, 'r', encoding='utf-8') as file:
         pokedex = json.load(file)
-        print(pokedex)
-
     return pokedex
 
 
@@ -19,14 +19,22 @@ def get_number_of_pokemon():
     number_of_pokemon = int (input("How many pokemon you want to enter ?: "))
     return number_of_pokemon
 
-stats_pokemon = []
+
 
 def get_pokemon_stats(number_of_pokemon):
+
+    stats_pokemon = []
+
     for number in range(number_of_pokemon):
         name = input("Enter the name: ")
-        type = input("Enter the type: ")
+        pokemon_type = input("Enter the type: ")
         level = int(input("Enter the level 1 - 100: "))
-        is_shiny = input("Is shiny (True/False) : ")
+        is_shiny = input("Is shiny (True/False) : ").lower()
+        if is_shiny == "true":
+            is_shiny = True
+        else:
+            is_shiny = False
+
         item = input("Enter the item: ")
         attack1 = input("Enter the Move 1: ")
         attack2 = input("Enter the Move 2: ")
@@ -41,7 +49,7 @@ def get_pokemon_stats(number_of_pokemon):
 
         stats_pokemon.append({
             "name": name,
-            "type": type,
+            "type": pokemon_type,
             "level": level,
             "is_shiny": is_shiny,
             "held_item": item,
@@ -62,18 +70,25 @@ def get_pokemon_stats(number_of_pokemon):
         })
     return stats_pokemon
 
-current_pokedex = pokedex_read_json("pokedex.json")
-
-number_of_pokemon = get_number_of_pokemon()
-
-new_pokemon = get_pokemon_stats(number_of_pokemon)
-
-current_pokedex.extend(new_pokemon)
-
-new_entry_pokedex("pokedex.json",current_pokedex)
-
-print(current_pokedex)
 
 
 
+
+def main_pokedex():
+    current_pokedex = pokedex_read_json("pokedex.json")
+
+    number_of_pokemon = get_number_of_pokemon()
+
+    new_pokemon = get_pokemon_stats(number_of_pokemon)
+
+    current_pokedex.extend(new_pokemon)
+
+    new_entry_pokedex("pokedex.json",current_pokedex)
+
+    print(current_pokedex)
+
+    return current_pokedex
+
+if __name__ == "__main__":
+    main_pokedex()
 

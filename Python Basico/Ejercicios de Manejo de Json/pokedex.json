@@ -1,48 +1,214 @@
 [
-	 // Primer Pókemon de la lista
-   {
-      "name":"Pikachu",
-      "type":"Electric",
-      "level":54,
-      "weight_kg":6.0,
-      "is_shiny":false,
-      "held_item":null,
-      "skills":[
-         "Thunder Shock",
-         "Quick Attack",
-         "Thunderbolt",
-         "Volt Tackle"
-      ],
-      "stats":{
-         "hp":35,
-         "attack":55,
-         "defense":40,
-         "sp_attack":50,
-         "sp_defense":50,
-         "speed":90
-      }
-   },
-   // Segundo Pókemon de la lista
-   {
-      "name":"Charmander",
-      "type":"Fire",
-      "level":8,
-      "weight_kg":8.5,
-      "is_shiny":true,
-      "held_item":"Charcoal",
-      "skills":[
-         "Ember",
-         "Scratch",
-         "Tackle",
-         "Smokescreen"
-      ],
-      "stats":{
-         "hp":39,
-         "attack":52,
-         "defense":43,
-         "sp_attack":60,
-         "sp_defense":50,
-         "speed":65
-      }
-   }
+    {
+        "name": "Pikachu",
+        "type": "Electric",
+        "level": 54,
+        "weight_kg": 6.0,
+        "is_shiny": false,
+        "held_item": null,
+        "skills": [
+            "Thunder Shock",
+            "Quick Attack",
+            "Thunderbolt",
+            "Volt Tackle"
+        ],
+        "stats": {
+            "hp": 35,
+            "attack": 55,
+            "defense": 40,
+            "sp_attack": 50,
+            "sp_defense": 50,
+            "speed": 90
+        }
+    },
+    {
+        "name": "Charmander",
+        "type": "Fire",
+        "level": 8,
+        "weight_kg": 8.5,
+        "is_shiny": true,
+        "held_item": "Charcoal",
+        "skills": [
+            "Ember",
+            "Scratch",
+            "Tackle",
+            "Smokescreen"
+        ],
+        "stats": {
+            "hp": 39,
+            "attack": 52,
+            "defense": 43,
+            "sp_attack": 60,
+            "sp_defense": 50,
+            "speed": 65
+        }
+    },
+    {
+        "name": "pichu",
+        "type": "Electric",
+        "level": 5,
+        "is_shiny": "false",
+        "held_item": "none",
+        "skills": [
+            "tackle",
+            "charm",
+            "none",
+            "none"
+        ],
+        "stats": {
+            "hp": 25,
+            "attack": 8,
+            "defense": 8,
+            "sp_defense": 7,
+            "sp_attack": 10,
+            "speed": 9
+        }
+    },
+    {
+        "name": "Mew",
+        "type": "Psychic",
+        "level": 100,
+        "is_shiny": "True",
+        "held_item": "mewstal z",
+        "skills": [
+            "Quick Attack",
+            "pound",
+            "hyper beam",
+            "calm mind"
+        ],
+        "stats": {
+            "hp": 252,
+            "attack": 180,
+            "defense": 190,
+            "sp_defense": 195,
+            "sp_attack": 255,
+            "speed": 200
+        }
+    },
+    {
+        "name": "Clefa",
+        "type": "Fairy",
+        "level": 1,
+        "is_shiny": true,
+        "held_item": "none",
+        "skills": [
+            "sweet kiss",
+            "charm",
+            "none",
+            "none"
+        ],
+        "stats": {
+            "hp": 9,
+            "attack": 4,
+            "defense": 4,
+            "sp_defense": 4,
+            "sp_attack": 5,
+            "speed": 3
+        }
+    },
+    {
+        "name": "Ho Oh",
+        "type": "Fire - Flying",
+        "level": 70,
+        "is_shiny": true,
+        "held_item": "sacred ash",
+        "skills": [
+            "sacred fire",
+            "tail wind",
+            "fly",
+            "brave bird"
+        ],
+        "stats": {
+            "hp": 250,
+            "attack": 180,
+            "defense": 150,
+            "sp_defense": 140,
+            "sp_attack": 250,
+            "speed": 200
+        }
+    },
+    {
+        "name": "Lugia",
+        "type": "Psychic",
+        "level": 70,
+        "is_shiny": true,
+        "held_item": "heal bell",
+        "skills": [
+            "hydro pump",
+            "fly",
+            "psychic",
+            "calm mind"
+        ],
+        "stats": {
+            "hp": 280,
+            "attack": 120,
+            "defense": 130,
+            "sp_defense": 120,
+            "sp_attack": 280,
+            "speed": 220
+        }
+    },
+    {
+        "name": "Mewtwo",
+        "type": "Psychic",
+        "level": 100,
+        "is_shiny": false,
+        "held_item": "Mewtwoita Y",
+        "skills": [
+            "Aura Sphere",
+            "PsyCut",
+            "Recover",
+            "Future sight"
+        ],
+        "stats": {
+            "hp": 300,
+            "attack": 180,
+            "defense": 190,
+            "sp_defense": 195,
+            "sp_attack": 300,
+            "speed": 250
+        }
+    },
+    {
+        "name": "Bulbasaur",
+        "type": "Grass",
+        "level": 5,
+        "is_shiny": false,
+        "held_item": "none",
+        "skills": [
+            "growl",
+            "tackle",
+            "none",
+            "none"
+        ],
+        "stats": {
+            "hp": 9,
+            "attack": 5,
+            "defense": 5,
+            "sp_defense": 6,
+            "sp_attack": 7,
+            "speed": 5
+        }
+    },
+    {
+        "name": "Squirtle",
+        "type": "Water",
+        "level": 5,
+        "is_shiny": false,
+        "held_item": "none",
+        "skills": [
+            "Tackle",
+            "Tail whip",
+            "none",
+            "none"
+        ],
+        "stats": {
+            "hp": 10,
+            "attack": 5,
+            "defense": 6,
+            "sp_defense": 6,
+            "sp_attack": 5,
+            "speed": 5
+        }
+    }
 ]
