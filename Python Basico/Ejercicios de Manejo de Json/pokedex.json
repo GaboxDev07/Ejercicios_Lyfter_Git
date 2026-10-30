@@ -45,7 +45,7 @@
     },
     {
         "name": "pichu",
-        "type": "Electric",
+        "type": "electric",
         "level": 5,
         "is_shiny": "false",
         "held_item": "none",

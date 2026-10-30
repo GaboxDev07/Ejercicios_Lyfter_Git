@@ -1,6 +1,5 @@
 print("Bienvenidos al ejercicio extra de manejo de json 4")
 
-
 import json
 import os
 
@@ -17,7 +16,7 @@ def poke_type_reader(read_path):
     pokemon_level_counter = {}
 
     for pokemon in current_pokedex:
-        pokemon_type = pokemon['type']
+        pokemon_type = pokemon['type'].lower()
         pokemon_level = pokemon['level']
 
         if pokemon_type in pokemon_type_counter:
